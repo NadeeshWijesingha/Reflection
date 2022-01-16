@@ -2,7 +2,7 @@ package lk.cinec;
 
 public class Primary {
 
-    private double x = 20;
+    public double x = 20;
     private double y = 30;
 
     public Primary() {
@@ -39,9 +39,6 @@ public class Primary {
 
     @Override
     public String toString() {
-        return "Primary{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return String.format("(x:%02f, y:%.02f)", x, y);
     }
 }
